@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="thanks.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <div class="container-mob">
+            <div class="exit">
+                <i class="fas fa-times i"></i>
+            </div>
+            <div class="menu">
+                <div class="menu-cont"><a class="menu-href" href="premium.html">Premium</a></div>
+                <div class="menu-cont"><a class="menu-href">Log In</a></div>
+                <div class="menu-cont"><a class="menu-href" href="signup.html">Sign Up</a></div>
+            </div>
+        </div>
+        <div class="top-container">
+            <nav class="top-nav">
+                <div class="logo-wrapper">
+                    <img class="top-img" src="logo.png">
+                    <a href="index.html" class="top-logo">VIBE</a>
+                </div>
+                <div class="content-wrapper">
+                    <i class="fas fa-bars nav-content1"></i>
+                    <div class="nav-content"><a class="href" href="premium.html">Premium</a></div>
+                    <div class="nav-content"><a class="href">Log In</a></div>
+                    <div class="nav-content"><a class="href" href="signup.html">Sign Up</a></div>
+                </div>
+            </nav>
+            <div class="text1">THANKS FOR SIGNING UP!</div>
+            <div class="text2">We have received your registrataion information and are working to set up your account. We will reach out to you shortly with the ﬁnal details. Thanks again for registering, and welcome to</div>
+            <a href="index.html" class="underline-vibe">VIBE</a>
+        </div>
+        <div class="bot-container">
+            <div class="text3">It's time to enjoy the premium.</div>
+            <div class="text4">If you subscribe to a premium, you can enjoy a variety of benefits.</div>
+            <div class="seemore"><a href="premium.html" class="seemore1">SEE MORE</a></div>
+        </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $(".container>.top-container>.top-nav>.content-wrapper>i").click(function(){
+                var submenu = $(".container>.container-mob");
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+            $(".container>.container-mob>.exit>.i").click(function(){
+                var submenu = $(".container>.container-mob");
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+        });
+        </script>
+    </body>
+</html>

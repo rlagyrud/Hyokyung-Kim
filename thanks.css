@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    font-family: 'Futura PT';
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.top-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    background: black;
+}
+.top-nav{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+}
+.logo-wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+.top-img{
+    margin-top: -1rem;
+    margin-left: 2rem;
+    width: 5%;
+}
+.top-logo{
+    font-size: 3rem;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.content-wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-content{
+    margin-right: 2rem;
+}
+.nav-content1{
+    margin-right: 2rem;
+    font-size: 3rem;
+    color: white;
+    visibility: hidden;
+}
+.href{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.href:hover{
+    color: black;
+    background: white;
+}
+.text1{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 6rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 800;
+}
+.text2{
+    margin: 0 20vw;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    color: #9ACD32;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.underline-vibe{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.bot-container{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text3{
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 3rem;
+}
+.text4{
+    color: black;
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    font-family: 'Futura PT';
+}
+.seemore{
+    font-weight: 800;
+    border-radius: 100px;
+    height: 8vh;
+    font-size: 2.5rem;
+    width: 20vw;
+    background: #9ACD32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    cursor: pointer;
+}
+.seemore1{
+    color: white;
+    text-decoration: none;
+}
+.container-mob{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .top-nav{
+        margin-bottom: 3rem;
+    }
+    .top-img{
+        width: 10%;
+    }
+    .top-logo{
+        font-size: 2.5rem;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-content1{
+        visibility: visible;
+    }
+    .container-mob{
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        display: none;
+        z-index: 10;
+    }
+    .exit{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+    .i{
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: flex-start;
+    }
+    .menu-cont{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .menu-href{
+        text-decoration: none;
+        color: white;
+    }
+    .top-container{
+        height: 60vh;
+    }
+    .bot-container{
+        height: 40vh;
+    }
+    .text1{
+        margin: 0 25vw;
+        font-size: 2.6rem;
+    }
+    .text2{
+        font-size: 1.2rem;
+        margin: 0 3rem;
+        margin-top: 2rem;
+    }
+    .underline-vibe{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .text3{
+        font-size: 2.5rem;
+    }
+    .text4{
+        font-size: 1.3rem;
+    }
+    .seemore{
+        height: 8vh;
+        margin: 2rem auto;
+        width: 60vw;
+    }
+    .seemore1{
+        font-size: 2rem;
+    }
+}

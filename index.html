@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-mob">
+                <div class="exit">
+                    <i class="fas fa-times i"></i>
+                </div>
+                <div class="menu">
+                    <div class="menu-cont"><a class="menu-href" href="premium.html">Premium</a></div>
+                    <div class="menu-cont"><a class="menu-href">Log In</a></div>
+                    <div class="menu-cont"><a class="menu-href" href="signup.html">Sign Up</a></div>
+                </div>
+            </div>
+            <img class="background-img" src="./tape.jpeg" height="100%">
+            <nav class="top-nav">
+                <div class="logo-wrapper">
+                    <img class="top-img" src="logo.png">
+                    <a href="index.html" class="top-logo">VIBE</a>
+                </div>
+                <div class="content-wrapper">
+                    <i class="fas fa-bars nav-content1"></i>
+                    <div class="nav-content"><a class="href" href="premium.html">Premium</a></div>
+                    <div class="nav-content"><a class="href">Log In</a></div>
+                    <div class="nav-content"><a class="href" href="signup.html">Sign Up</a></div>
+                </div>
+            </nav>
+            <div class="main-text">NEW LEVEL OF SOUND EXPERIENCE</div>
+            <div class="try"><a class="href" href="signup.html">TRY VIBE FOR FREE</a></div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $(".container>.top-nav>.content-wrapper>i").click(function(){
+                var submenu = $(".container>.container-mob");
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+            $(".container>.container-mob>.exit>.i").click(function(){
+                var submenu = $(".container>.container-mob");
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+        });
+        </script>
+    </body>
+</html>
